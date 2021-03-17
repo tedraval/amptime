@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amptime</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onload="inicio()">
+    <span id="config" class="material-icons iconRightTop menu">menu</span>
+
+    <span id="theme" class="material-icons iconRightTop" onclick="cores()">toggle_off</span>
+
+    <div id="tempo">
+        <ul>
+            <li>Dias:<span id="dia"></span></li>
+            <li>Horas:<span id="hora"></span></li>
+            <li>Minutos:<span id="minuto"></span></li>
+            <li>Segundos:<span id="segundo"></span></li>
+        </ul>
+    </div>
+
+    <div id="control">
+        <p id="status">Contagem regressiva</p>
+
+        <ul>
+            <li>
+                <a href="#"><span class="material-icons">restore</span></a>
+            </li>
+
+            <li>
+                <a href="#"><span class="material-icons material-icons-outlined center">play_circle_outline</span></a>
+            </li>
+            <!--  
+                <span class="material-icons-outlined">pause_circle</span>
+            -->
+            <li>
+                <span id="closeFullScreen" class="material-icons" onclick="closeFullscreen()">close_fullscreen</span>
+                <span id="fullscreen" class="material-icons" onclick="openFullScreen()">launch</span></a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="configuracao">
+        <div class="centralized">
+            <h1>Contagem regressiva</h1>
+            <p>Defina o tempo da contagem regressiva e clique em</p>
+            <ul>
+                <li><input type="time" value=""></li>
+                <li><button>Definir</button></li>
+                <li><button>Definir</button></li>
+
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./javascript/fullscreen.js"></script>
+    
+</body>
+
+</html>
